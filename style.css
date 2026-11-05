@@ -862,3 +862,52 @@ body.light .heading{
   }
 
 }
+img{
+  max-width:100%;
+  height:auto;
+}
+body{
+  overflow-x: hidden;
+}/* Mobile Layout Improvements */
+@media screen and (max-width: 480px) {
+
+    .home {
+        min-height: auto;
+        padding: 100px 5% 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .home-content {
+        order: -1;
+        text-align: center;
+        width: 100%;
+    }
+
+    .home-content h1 {
+        font-size: 30px;
+    }
+
+    .home-image {
+        order: 1;
+    }
+
+    .home-image img {
+        width: 190px;
+        height: 190px;
+        object-fit: cover;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    nav a {
+        font-size: 13px;
+    }
+}
